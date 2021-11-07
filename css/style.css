@@ -1,0 +1,75 @@
+:root {
+    --bg-color: #1e1a22;
+    --font-color: #e7e7e7;
+}  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Ubuntu, "Segoe UI", Roboto, Oxygen-Sans,  Cantarell, "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont;
+}
+
+main {
+    color: var(--font-color);
+    width: 20em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#avatar {
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    max-width: 10em;
+    max-height: 10em;
+}
+
+#name {
+    font-size: 24px;
+}
+
+aside {
+    position: absolute;
+    top: 1em;
+    right: 5em;
+    display: flex;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+nav.external {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav.external svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--font-color);
+}
+
+nav.external a {
+    font-size: 0.7em;
+    display: block;
+    text-align: center;
+    padding-right: 1em;
+}
